@@ -1,22 +1,22 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { Header } from 'components';
+import React, { useState } from 'react';
+import { Root } from 'native-base';
+import styled from 'styled-components/native';
+
+import { Opacity } from 'components';
 
 export default () => {
   return (
-    <View style={styles.container}>
-      <Header searchBar rounded>
-        <Text>Open up App.tsx to start working on your app!</Text>
-      </Header>
-    </View>
+    <Root>
+      <SApplication>
+        <Opacity />
+      </SApplication>
+    </Root>
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center'
-  }
-});
+const SApplication = styled.View`
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;

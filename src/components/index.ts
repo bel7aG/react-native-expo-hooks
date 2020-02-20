@@ -1,3 +1,4 @@
-import Header from "./Header";
+import Header from './Header';
+import Opacity from './Opacity';
 
-export { Header };
+export { Header, Opacity };
